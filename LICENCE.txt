@@ -1,0 +1,20 @@
+CoreBluetoothMock.framework License
+
+Copyright (c) 2026 tochy.m
+
+This framework is distributed under a proprietary license.
+
+Permission is granted to use this framework in your applications under the following conditions:
+
+1. Modification, reverse engineering, decompilation, or analysis of this framework is prohibited.
+2. Redistribution of this framework, in whole or in part, is prohibited.
+3. Use is limited to development and testing within your own applications.
+
+Dependencies:
+
+- gRPC Swift (Apache 2.0) is included as a dependency.
+  You must comply with Apache 2.0 terms for gRPC components.
+
+Disclaimer:
+
+This framework is provided \"as is\" without warranty of any kind.
