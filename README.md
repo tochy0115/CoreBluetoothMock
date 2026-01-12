@@ -19,11 +19,11 @@ Using this framework, you can develop and test BLE communication functionality o
 
 ## Installation
 
-1. Obtain `CoreBluetoothMock.framework` from this repository: [https://github.com/tochy0115/CoreBluetoothMock.git](https://github.com/tochy0115/CoreBluetoothMock.git)
-2. Add it to **Frameworks, Libraries, and Embedded Content** in your Xcode project
-3. Optionally, add the `CoreBluetoothMockDependencies` package via Swift Package Manager to resolve dependencies 
-(See [https://github.com/tochy0115/CoreBluetoothMock_Dependencies.git](https://github.com/tochy0115/CoreBluetoothMock_Dependencies.git))
-4. Modify the import of CoreBluetooth as follows:
+1. Obtain `CoreBluetoothMock.framework` from this repository
+2. Add `CoreBluetoothMock.framework` to **Frameworks, Libraries, and Embedded Content** in your Xcode project
+3. Add the [CoreBluetoothMockDependencies](https://github.com/tochy0115/CoreBluetoothMock_Dependencies.git) package via Swift Package Manager to automatically include all required dependencies for using CoreBluetoothMock
+4. Modify your CoreBluetooth import statements as follows:
+
 ### Swift
 ```swift
 #if targetEnvironment(simulator)

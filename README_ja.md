@@ -19,10 +19,9 @@
 
 ## 導入方法
 
-1. このリポジトリから `CoreBluetoothMock.framework` を取得: [https://github.com/tochy0115/CoreBluetoothMock.git](https://github.com/tochy0115/CoreBluetoothMock.git)
-2. Xcode プロジェクトの **Frameworks, Libraries, and Embedded Content** に追加
-3. CoreBluetoothMockDependencies パッケージを Swift Package Manager で追加することで依存パッケージをインストール 
-((参照 [https://github.com/tochy0115/CoreBluetoothMock_Dependencies.git](https://github.com/tochy0115/CoreBluetoothMock_Dependencies.git)))
+1. このリポジトリから `CoreBluetoothMock.framework` を取得
+2. Xcode プロジェクトの **Frameworks, Libraries, and Embedded Content** に`CoreBluetoothMock.framework` を追加
+3. [CoreBluetoothMockDependencies](https://github.com/tochy0115/CoreBluetoothMock_Dependencies.git)パッケージを Swift Package Manager で追加し、CoreBluetoothMockの利用で必要な依存パッケージを追加インストール
 4. CoreBluetoothのインポート箇所を以下のように修正
 ### Swift
 ```swift
