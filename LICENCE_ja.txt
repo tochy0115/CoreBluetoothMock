@@ -1,6 +1,6 @@
 CoreBluetoothMock.framework ライセンス
 
-Copyright (c) 2026 tochy.m
+Copyright (c) 2026 Toshinori
 
 本フレームワークは独自ライセンスのもとで配布されます。
 

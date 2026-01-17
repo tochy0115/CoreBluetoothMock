@@ -14,9 +14,8 @@ Using this framework, you can develop and test BLE communication functionality o
 
 - Xcode 26.2 or later
 - Swift / Objective-C
-- iOS Simulator (use CoreBluetooth.framework on real devices)
-- BLE Sim Linker must be running on macOS before starting the simulator
-
+- Simulator iOS 16.0 or later
+- CoreBluetooth SimLink 1.0 or later
 ## Installation
 
 1. Obtain `CoreBluetoothMock.framework` from this repository

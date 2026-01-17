@@ -12,10 +12,10 @@
 
 ## 対応環境
 
-- Xcode 26.2 以降
+- Xcode 16.0 以降
 - Swift / Objective-C
-- iOS シミュレータ (実機では CoreBluetooth.framework を使用)
-- macOS 上で BLE Sim Linker が必要（シミュレータ起動前に必須）
+- シミュレータ iOS 16.0 以降
+- CoreBluetooth SimLink 1.0 以降
 
 ## 導入方法
 

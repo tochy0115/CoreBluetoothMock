@@ -1,6 +1,6 @@
 CoreBluetoothMock.framework License
 
-Copyright (c) 2026 tochy.m
+Copyright (c) 2026 Toshinori
 
 This framework is distributed under a proprietary license.
 
