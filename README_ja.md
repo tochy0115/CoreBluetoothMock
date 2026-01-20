@@ -1,21 +1,21 @@
 # CoreBluetoothMock (日本語版)
 
 `CoreBluetoothMock.framework` は、iOS シミュレータ上で CoreBluetooth API をモックするためのフレームワークです。  
-これを利用することで、iOS シミュレータ上でMac OS上のCoreBluetoothをBLE Sim Linkerを経由してBLE 通信機能の開発・テストが可能になります。
+これを利用することで、iOS シミュレータ上でMac OS上のCoreBluetoothをCB Interaction Viewerを経由してBLE 通信機能の開発・テストが可能になります。
 
 ## 特徴
 
 - CoreBluetooth API と互換性のあるインターフェースを提供
 - iOS シミュレータ上で BLE デバイスの接続・通信をモック可能
 - Swift / Objective-C 両方から利用可能
-- BLE Sim Linker を介して macOS の CoreBluetooth を利用することで、より実機に近い挙動を再現
+- CB Interaction Viewer を介して macOS の CoreBluetooth を利用することで、より実機に近い挙動を再現
 
 ## 対応環境
 
 - Xcode 16.0 以降
 - Swift / Objective-C
 - シミュレータ iOS 16.0 以降
-- CoreBluetooth SimLink 1.0 以降
+- CB Interaction Viewer 1.0.0 以降
 
 ## 導入方法
 
@@ -49,7 +49,7 @@ import CoreBluetooth
 
 - 実機での Bluetooth 通信テストには CoreBluetooth.framework を使用してください。
 - シミュレータ用のモックであり、全ての実機挙動を再現するわけではありません。
-- BLE Sim Linker を起動していない場合、シミュレータ上で CoreBluetoothMockは正常に動作しません。
+- CB Interaction Viewer を起動していない場合、シミュレータ上で CoreBluetoothMockは正常に動作しません。
 - **本フレームワークの改ざん、リバースエンジニアリング、逆コンパイル、解析行為は禁止です。**
 
 ## ライセンス
