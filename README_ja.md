@@ -15,7 +15,7 @@
 - Xcode 16.0 以降
 - Swift / Objective-C
 - シミュレータ iOS 16.0 以降
-- CB Interaction Viewer 1.0.0 以降
+- CB Interaction Viewer 1.1.2 以降
 
 ## 導入方法
 

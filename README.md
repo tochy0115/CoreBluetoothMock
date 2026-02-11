@@ -15,7 +15,7 @@ Using this framework, you can develop and test BLE communication functionality o
 - Xcode 26.2 or later
 - Swift / Objective-C
 - Simulator iOS 16.0 or later
-- CB Interaction Viewer 1.0.0 or later
+- CB Interaction Viewer 1.1.2 or later
 ## Installation
 
 1. Obtain `CoreBluetoothMock.framework` from this repository
