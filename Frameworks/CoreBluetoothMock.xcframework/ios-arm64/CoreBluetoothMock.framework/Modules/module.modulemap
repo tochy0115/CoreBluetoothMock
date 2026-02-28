@@ -1,0 +1,11 @@
+framework module CoreBluetoothMock {
+  umbrella header "CoreBluetoothMock.h"
+  export *
+
+  module * { export * }
+}
+
+module CoreBluetoothMock.Swift {
+  header "CoreBluetoothMock-Swift.h"
+  requires objc
+}

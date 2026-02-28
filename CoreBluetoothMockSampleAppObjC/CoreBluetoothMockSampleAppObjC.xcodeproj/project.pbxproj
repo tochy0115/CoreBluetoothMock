@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D852BCFC2F52BFD700D3D6F7 /* CoreBluetoothMock_Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = D852BCFB2F52BFD700D3D6F7 /* CoreBluetoothMock_Dependencies */; };
-		D852BFCB2F52D4BD00D3D6F7 /* CoreBluetoothMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D852BFCA2F52D4BC00D3D6F7 /* CoreBluetoothMock.framework */; };
-		D852BFCC2F52D4BD00D3D6F7 /* CoreBluetoothMock.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D852BFCA2F52D4BC00D3D6F7 /* CoreBluetoothMock.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D88028382F5341AB00E0A644 /* CoreBluetoothMock in Frameworks */ = {isa = PBXBuildFile; productRef = D88028372F5341AB00E0A644 /* CoreBluetoothMock */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +34,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D852BFCC2F52D4BD00D3D6F7 /* CoreBluetoothMock.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,7 +56,6 @@
 		D80057462EB41FA0003D4548 /* CoreBluetoothMockSampleAppObjCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreBluetoothMockSampleAppObjCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D852BCF42F52B59400D3D6F7 /* CoreBluetoothMockSampleAppObjCSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreBluetoothMockSampleAppObjCSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D852BCF62F52B59400D3D6F7 /* CoreBluetoothMockSampleAppObjC copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CoreBluetoothMockSampleAppObjC copy-Info.plist"; path = "/Users/tochy/Development/CoreBluetoothMock/CoreBluetoothMockSampleAppObjC/CoreBluetoothMockSampleAppObjC copy-Info.plist"; sourceTree = "<absolute>"; };
-		D852BFCA2F52D4BC00D3D6F7 /* CoreBluetoothMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetoothMock.framework; path = ../Frameworks/CoreBluetoothMock.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -128,8 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D852BFCB2F52D4BD00D3D6F7 /* CoreBluetoothMock.framework in Frameworks */,
-				D852BCFC2F52BFD700D3D6F7 /* CoreBluetoothMock_Dependencies in Frameworks */,
+				D88028382F5341AB00E0A644 /* CoreBluetoothMock in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +138,6 @@
 				D800573F2EB41FA0003D4548 /* CoreBluetoothMockSampleAppObjCTests */,
 				D80057492EB41FA0003D4548 /* CoreBluetoothMockSampleAppObjCUITests */,
 				D852BCF62F52B59400D3D6F7 /* CoreBluetoothMockSampleAppObjC copy-Info.plist */,
-				D852BFC92F52D4BC00D3D6F7 /* Frameworks */,
 				D80057222EB41F9F003D4548 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -157,14 +151,6 @@
 				D852BCF42F52B59400D3D6F7 /* CoreBluetoothMockSampleAppObjCSimulator.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D852BFC92F52D4BC00D3D6F7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D852BFCA2F52D4BC00D3D6F7 /* CoreBluetoothMock.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +243,7 @@
 			);
 			name = CoreBluetoothMockSampleAppObjCSimulator;
 			packageProductDependencies = (
-				D852BCFB2F52BFD700D3D6F7 /* CoreBluetoothMock_Dependencies */,
+				D88028372F5341AB00E0A644 /* CoreBluetoothMock */,
 			);
 			productName = CoreBluetoothMockSampleAppObjC;
 			productReference = D852BCF42F52B59400D3D6F7 /* CoreBluetoothMockSampleAppObjCSimulator.app */;
@@ -295,7 +281,7 @@
 			mainGroup = D80057182EB41F9F003D4548;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				D852BCFA2F52BFD700D3D6F7 /* XCRemoteSwiftPackageReference "CoreBluetoothMock_Dependencies" */,
+				D88028362F5341AB00E0A644 /* XCLocalSwiftPackageReference "../../CoreBluetoothMock" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D80057222EB41F9F003D4548 /* Products */;
@@ -764,22 +750,17 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		D852BCFA2F52BFD700D3D6F7 /* XCRemoteSwiftPackageReference "CoreBluetoothMock_Dependencies" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/tochy0115/CoreBluetoothMock_Dependencies.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
+/* Begin XCLocalSwiftPackageReference section */
+		D88028362F5341AB00E0A644 /* XCLocalSwiftPackageReference "../../CoreBluetoothMock" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../CoreBluetoothMock;
 		};
-/* End XCRemoteSwiftPackageReference section */
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D852BCFB2F52BFD700D3D6F7 /* CoreBluetoothMock_Dependencies */ = {
+		D88028372F5341AB00E0A644 /* CoreBluetoothMock */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D852BCFA2F52BFD700D3D6F7 /* XCRemoteSwiftPackageReference "CoreBluetoothMock_Dependencies" */;
-			productName = CoreBluetoothMock_Dependencies;
+			productName = CoreBluetoothMock;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

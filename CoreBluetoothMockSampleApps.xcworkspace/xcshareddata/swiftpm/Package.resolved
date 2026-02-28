@@ -1,15 +1,6 @@
 {
-  "originHash" : "80117330ee9a1b008fc438bcf41b848da331fd2cb154449d028dfcc582f28e92",
+  "originHash" : "a133b7cd023d8f0b2a14366c0cb156e5dfa41305df77c9ca2ac6872283060a12",
   "pins" : [
-    {
-      "identity" : "corebluetoothmock_dependencies",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/tochy0115/CoreBluetoothMock_Dependencies.git",
-      "state" : {
-        "revision" : "cd3fcf65d35a05ab55a8ee111d14afdc2ac972ed",
-        "version" : "1.0.0"
-      }
-    },
     {
       "identity" : "grpc-swift",
       "kind" : "remoteSourceControl",
