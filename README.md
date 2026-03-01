@@ -12,14 +12,11 @@ Using this framework, you can develop and test BLE communication functionality o
 
 ## Included Files
 
-### Framework payload (`Frameworks/CoreBluetoothMock.framework`)
+### SPM package artifacts
 
-- `CoreBluetoothMock`: Framework binary
-- `Info.plist`: Framework metadata
-- `Headers/CoreBluetoothMock.h`: Main public header
-- `Headers/CoreBluetoothMock-Swift.h`: Swift generated Objective-C interface header
-- `Modules/module.modulemap`: Clang module definition
-- `Modules/CoreBluetoothMock.swiftmodule/`: Swift module interfaces
+- `Package.swift`: Swift Package manifest exposing product `CoreBluetoothMock`
+- `Sources/CoreBluetoothMockWrapper/`: Wrapper target source used by the package product
+- `CoreBluetoothMock.xcframework.zip` (GitHub Releases): Binary artifact downloaded by Swift Package Manager
 
 ### Sample Apps
 
@@ -34,14 +31,20 @@ Using this framework, you can develop and test BLE communication functionality o
 - Swift / Objective-C
 - Simulator iOS 16.0 or later
 - [CB Interaction Viewer](https://apps.apple.com/jp/app/cb-interaction-viewer/id6757977616?mt=12) 1.1.2 or later
+
 ## Installation
 
-1. Copy `Frameworks/CoreBluetoothMock.framework` from this repository into your app repository (for example, `YourApp/Frameworks/CoreBluetoothMock.framework`).
-2. Open your Xcode project and add `CoreBluetoothMock.framework` to your app target's **Frameworks, Libraries, and Embedded Content**.
-	- Set **Embed** to **Embed & Sign** for simulator builds.
-3. Add the [CoreBluetoothMockDependencies](https://github.com/tochy0115/CoreBluetoothMock_Dependencies.git) package using Swift Package Manager.
-4. In your app target, add the package product `CoreBluetoothMock_Dependencies` to **Frameworks, Libraries, and Embedded Content** (or your target's linked frameworks list).
-5. Replace CoreBluetooth imports with simulator/device conditional imports:
+1. Open your Xcode project and add this package URL with Swift Package Manager:
+	- `https://github.com/tochy0115/CoreBluetoothMock.git`
+2. Select a version rule (for example, **Up to Next Major**) and use `1.0.2` or later.
+
+![Add Package Dependencies](README_IMG/image.png)
+
+3. In your app target, add the package product `CoreBluetoothMock` to your linked frameworks/packages.
+
+![Select Target](README_IMG/image2.png)
+
+4. Replace CoreBluetooth imports with simulator/device conditional imports:
 
 ### Swift
 ```swift
@@ -61,7 +64,9 @@ import CoreBluetooth
 #endif
 ```
 
-6. Launch [CB Interaction Viewer](https://apps.apple.com/jp/app/cb-interaction-viewer/id6757977616?mt=12) on macOS before running your app on the iOS simulator.
+5. Launch [CB Interaction Viewer](https://apps.apple.com/jp/app/cb-interaction-viewer/id6757977616?mt=12) on macOS before running your app on the iOS simulator.
+
+![Launch CB Interction Viewer](README_IMG/image3.png)
 
 ## Notes
 

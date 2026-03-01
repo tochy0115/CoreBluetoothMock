@@ -12,14 +12,11 @@
 
 ## 同梱ファイル
 
-### フレームワーク本体（`Frameworks/CoreBluetoothMock.framework`）
+### SPM パッケージ構成
 
-- `CoreBluetoothMock`: フレームワークバイナリ
-- `Info.plist`: フレームワークのメタデータ
-- `Headers/CoreBluetoothMock.h`: メインの公開ヘッダ
-- `Headers/CoreBluetoothMock-Swift.h`: Swift 生成の Objective-C 向けインターフェースヘッダ
-- `Modules/module.modulemap`: Clang モジュール定義
-- `Modules/CoreBluetoothMock.swiftmodule/`: Swift モジュールインターフェース
+- `Package.swift`: 製品 `CoreBluetoothMock` を公開する Swift Package マニフェスト
+- `Sources/CoreBluetoothMockWrapper/`: パッケージ製品で使用するラッパーターゲットのソース
+- `CoreBluetoothMock.xcframework.zip`（GitHub Releases）: Swift Package Manager が取得するバイナリアーティファクト
 
 ### サンプルアプリ
 
@@ -37,12 +34,17 @@
 
 ## 導入方法
 
-1. このリポジトリの `Frameworks/CoreBluetoothMock.framework` を、アプリ側リポジトリにコピーします（例: `YourApp/Frameworks/CoreBluetoothMock.framework`）。
-2. Xcode プロジェクトを開き、アプリターゲットの **Frameworks, Libraries, and Embedded Content** に `CoreBluetoothMock.framework` を追加します。
-	- シミュレータ向けビルドでは **Embed** を **Embed & Sign** に設定してください。
-3. [CoreBluetoothMockDependencies](https://github.com/tochy0115/CoreBluetoothMock_Dependencies.git) を Swift Package Manager で追加します。
-4. アプリターゲットの **Frameworks, Libraries, and Embedded Content**（またはターゲットのリンク済みフレームワークリスト）に、パッケージ製品 `CoreBluetoothMock_Dependencies` を追加します。
-5. CoreBluetooth の import を、シミュレータ/実機の条件付き import に置き換えます。
+1. Xcode プロジェクトを開き、Swift Package Manager で以下の URL を追加します。
+	- `https://github.com/tochy0115/CoreBluetoothMock.git`
+2. バージョンルール（例: **Up to Next Major**）を選択し、`1.0.2` 以降を指定します。
+
+  ![Add Package Dependencies](README_IMG/image.png)
+
+3. アプリターゲットに、パッケージ製品 `CoreBluetoothMock` を追加します。
+
+![alt text](README_IMG/image2.png)
+
+4. CoreBluetooth の import を、シミュレータ/実機の条件付き import に置き換えます。
 
 ### Swift
 ```swift
@@ -62,7 +64,9 @@ import CoreBluetooth
 #endif
 ```
 
-6. iOS シミュレータでアプリを実行する前に、macOS で [CB Interaction Viewer](https://apps.apple.com/jp/app/cb-interaction-viewer/id6757977616?mt=12) を起動します。
+5. iOS シミュレータでアプリを実行する前に、macOS で [CB Interaction Viewer](https://apps.apple.com/jp/app/cb-interaction-viewer/id6757977616?mt=12) を起動します。
+
+![Launch CB Interction Viewer](README_IMG/image3.png)
 
 ## 注意点
 
