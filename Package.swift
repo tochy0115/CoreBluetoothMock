@@ -20,7 +20,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "CoreBluetoothMockBinary",
-            path: "Frameworks/CoreBluetoothMock.xcframework"
+            url: "https://github.com/tochy0115/CoreBluetoothMock/releases/download/1.0.2/CoreBluetoothMock.xcframework.zip",
+            checksum: "3f1af9f1cfec63b0dc0d185d5d313c131d4fe1738bc197b93e7bea2c9de9b395"
         ),
         .target(
             name: "CoreBluetoothMockWrapper",
